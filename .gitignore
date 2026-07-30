@@ -1,0 +1,4 @@
+mcalc
+*.o
+*.c
+.mere_modules/

@@ -1,0 +1,7 @@
+[package]
+name = "mcalc"
+path = "github.com/284km/mcalc"
+version = "0.1.0"
+
+[dependencies]
+mbigfmt = { git = "https://github.com/284km/mbigfmt", rev = "523555487718d2bb0f429d996e5b8a05e6f522dc" }

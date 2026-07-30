@@ -1,0 +1,12 @@
+// mcalc — a tiny big-number CLI. Depends only on mbigfmt; mbignum is a
+// TRANSITIVE dependency (mcalc never names it). The lockfile must still pin
+// mbignum's revision — that is exactly what a lockfile is for.
+import "github.com/284km/mbigfmt/bigfmt.mere";
+
+match args () with
+| Cons (cmd, Cons (narg, _)) ->
+  let n = int_of_str narg in
+  if str_eq cmd "fact" then print (Bigfmt.fact n)
+  else if str_eq cmd "fib" then print (Bigfmt.fib n)
+  else print "usage: mcalc (fact|fib) N"
+| _ -> print "usage: mcalc (fact|fib) N"
