@@ -4,10 +4,10 @@
 name = "github.com/284km/mbigfmt"
 git = "https://github.com/284km/mbigfmt"
 rev = "523555487718d2bb0f429d996e5b8a05e6f522dc"
-hash = "md5:fe5c4f5a1203ee03680e4ccb5278e031"
+hash = "md5:0f6f282caf8fe2cd6328d26180bc5ddf"
 
 [[package]]
 name = "github.com/284km/mbignum"
 git = "https://github.com/284km/mbignum"
 rev = "48e9cfa5069562e759f2baef2a6a043ecf09ada3"
-hash = "md5:0090a3310a12d5724d19fd0453b4536d"
+hash = "md5:fac9094db50cabc6ff8724a041e54ea7"
