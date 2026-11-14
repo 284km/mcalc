@@ -13,14 +13,14 @@ mere -c mcalc.mere > c.c && clang -O2 c.c -o mcalc && ./mcalc fib 200
 ## The dependency graph
 
 ```
-mcalc  ──▶  github.com/284km/mbigfmt  ──▶  github.com/284km/mbignum
+mcalc  ──▶  github.com/merelang/mbigfmt  ──▶  github.com/merelang/mbignum
 (app)        (thousands grouping)           (arbitrary precision)
 ```
 
 `mcalc` depends only on **mbigfmt**. It never names **mbignum** — that is a
 *transitive* dependency, pulled in because mbigfmt declares it. `mere install`
 follows the cross-repo `[dependencies]` chain, installs each package under its
-full module path (`.mere_modules/github.com/284km/…/`), and writes a
+full module path (`.mere_modules/github.com/merelang/…/`), and writes a
 `mere.lock` that pins **both** packages — including the transitive mbignum —
 with their resolved commit and a content hash.
 
